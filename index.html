@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Kalolsavam Navigation</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 1rem;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 525px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.school-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+}
+
+.school-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.school-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.school-card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-grow: 1;
+}
+
+.school-card h2 {
+  font-size: 1rem;
+  color: #2c3e50;
+  line-height: 1.4;
+}
+
+.school-card a {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.school-card a:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .grid {
+    gap: 1.5rem;
+  }
+
+  .school-card {
+    min-height: 200px;
+  }
+
+  .school-card img {
+    height: 200px;
+  }
+
+  .school-card-content {
+    padding: 2rem;
+  }
+
+  .school-card h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 2rem;
+  }
+
+  .grid {
+    gap: 2rem;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Kalolsavam Navigation 2025</h1>
+
+  <div class="grid">
+    <div class="school-card">
+      <img src="images/SNM Govt Boys HSS.png" alt="SNM Govt Boys HSS">
+      <div class="school-card-content">
+        <h2>SNM Govt Boys HSS</h2>
+        <a href="https://maps.app.goo.gl/RzRqRD6fpbmgXXkVA" target="_blank">View on Map</a>
+      </div>
+    </div>
+
+    <div class="school-card">
+      <img src="images/Govt. Girls Higher Secondary School Cherthala.png" alt="Govt Girls HSS">
+      <div class="school-card-content">
+        <h2>Govt Girls HSS</h2>
+        <a href="https://maps.app.goo.gl/33V9Uhr1w3BZ9eEu9" target="_blank">View on Map</a>
+      </div>
+    </div>
+
+    <div class="school-card">
+      <img src="images/Govt.Town.L.P.School Cherthala.jpg" alt="Govt Town LPS">
+      <div class="school-card-content">
+        <h2>Govt Town LPS</h2>
+        <a href="https://maps.app.goo.gl/6URWcRNFJL8dLLvb7" target="_blank">View on Map</a>
+      </div>
+    </div>
+
+    <div class="school-card">
+      <img src="images/St. Mary's Girls HS.png" alt="St. Mary's Girls HS">
+      <div class="school-card-content">
+        <h2>St. Mary's Girls HS</h2>
+        <a href="https://maps.app.goo.gl/aZxEd7fscYsmAzHL7" target="_blank">View on Map</a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>	 
